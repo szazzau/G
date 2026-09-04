@@ -1,0 +1,29 @@
+<!-- Paste into the <head> of your site template. Replace placeholders. -->
+<title>{{SITE_TITLE}}</title>
+<meta name="description" content="{{SHORT_DESCRIPTION}}" />
+<link rel="canonical" href="{{SITE_URL}}" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{SITE_TITLE}}" />
+<meta property="og:description" content="{{SHORT_DESCRIPTION}}" />
+<meta property="og:url" content="{{SITE_URL}}" />
+<meta property="og:image" content="{{OG_IMAGE_URL}}" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@your_handle" />
+<meta name="twitter:title" content="{{SITE_TITLE}}" />
+<meta name="twitter:description" content="{{SHORT_DESCRIPTION}}" />
+<meta name="twitter:image" content="{{OG_IMAGE_URL}}" />
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "{{SITE_URL}}",
+  "name": "{{SITE_TITLE}}",
+  "description": "{{SHORT_DESCRIPTION}}"
+}
+</script>
