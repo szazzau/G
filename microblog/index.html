@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Microblog — G</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- Basic social / SEO: customize SITE_URL, SITE_TITLE, DESCRIPTION, IMAGE -->
+  <meta name="description" content="A lightweight microblog for G" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="G — Microblog" />
+  <meta property="og:description" content="A lightweight microblog for G" />
+  <meta property="og:url" content="https://your-site.example/" />
+  <meta property="og:image" content="https://your-site.example/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="G — Microblog" />
+  <meta name="twitter:description" content="A lightweight microblog for G" />
+  <meta name="twitter:image" content="https://your-site.example/og-image.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>G — Microblog</h1>
+      <p class="tagline">Short posts. Share quickly.</p>
+    </header>
+
+    <section id="compose">
+      <textarea id="postText" placeholder="What's happening?" maxlength="280"></textarea>
+      <div class="compose-row">
+        <span id="charCount">280</span>
+        <button id="postBtn">Post</button>
+      </div>
+    </section>
+
+    <section id="posts" aria-live="polite"></section>
+
+    <footer>
+      <small>Microblog example — posts persist to the server when available, otherwise localStorage. Load posts.json for seed data.</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
